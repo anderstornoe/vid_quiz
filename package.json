@@ -1,0 +1,26 @@
+{
+  "name": "ato_videoquiz",
+  "version": "1.0.0",
+  "description": "player and GUI",
+  "main": "index.js",
+  "scripts": {
+    "test": "hej test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anderstornoe/vid_quiz.git"
+  },
+  "keywords": [
+    "key",
+    "words"
+  ],
+  "author": "ato and than",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anderstornoe/vid_quiz/issues"
+  },
+  "homepage": "https://github.com/anderstornoe/vid_quiz",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  }
+}
