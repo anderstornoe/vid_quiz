@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- 
+      //########################################################################
+      //                                                          
+      //      DOKUMENTATION TIL THOMAS: 
+      //      Dette script tager udgangspunkt i versionen:
+      //
+      //          index4_24_position_bootstrap.html
+      //
+      //########################################################################
+ -->
+
+  <title>Plotstruktur</title>
+
+  <!-- http://www.robotstxt.org/meta.html -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
+
+  <link rel="stylesheet" type="text/css" href="css/berettermodel.css" />
+
+
+  <style type="text/css">
+   /* 
+    * DENNE CSS JUSTERING HAR INGEN EFFEKT PAA JAVASCRIPTET 
+    * Javascript tager ikke hoejde for justeringen, og ser blot elementerne som vaerende ikke-justeret!!!
+    */
+/*      
+    #Menu1 {position: relative; top: 0px;}
+    #Menu2 {position: relative; top: -30px;}
+    #Menu3 {position: relative; top: -60px;}
+    #Menu4 {position: relative; top: -90px;}
+    #Menu5 {position: relative; top: -120px;}
+    #Menu6 {position: relative; top: -150px;}
+    #Menu7 {position: relative; top: -180px;}
+*/
+
+  </style>
+
+
+</head>
+    <body>
+
+        <!-- 
+          NOTE: Siden wrappes IKKE i et bootstrap "container" klasse, idet dette giver forstyrrelser 
+                i det JavaScript der styre positioneringen af div-tags med dropdown-menuer
+        -->
+        <div class="container-fluid"> 
+
+            <div class="jumbotron">
+                <h1>The Hollywood model</h1>
+                <p>
+                  The most typical plot structure of fiction films is called the Hollywood model or sometimes the narrative model. <br/>It resembles the way fairy tales are structured and follows 7 steps that you will be able to recognize in many different films that have nothing else in common.
+                </p> 
+            </div>
+
+            <div class="row"> 
+                <div class="col-sm-12">
+                    <div class="h4 UserManual">
+                        <ul>
+                            <li>Choose the right name from the drop down menu for each step of the plot </li>
+                            <li>Once you’re done selecting the words, click the “Check answers” button  </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row"> 
+ 
+          <!--  <div class="col-sm-12"> -->  <!--  NOTE: class="col-sm-12" forstyrre placeringen af overlayet -->
+
+                    <div class="ImgWrapper">  
+
+                        <div id="Menu1" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                  Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu2" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu3" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu4" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu5" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu6" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <div id="Menu7" class="btn-group Dmenu">
+                            <a  href="#" class="btn btn-default btn-sm dropdown-toggle btn-autosize" data-toggle="dropdown">
+                                <span class="MenuHeading">
+                                    Choose a word
+                                </span>
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </a>
+                            <ul role="menu" class="dropdown-menu">
+                            </ul>
+                        </div>
+
+                        <button id="done" type="button" class="btn btn-default btn-lg btn-autosize">
+                           Check answers
+                        </button>
+
+                    </div>  <!-- END .ImgWrapper -->
+
+
+                    <div class="ImgOverlay hide">
+                        <div id="resultwrap">
+                           Number of correct answers: <span id="result"> 0 </span> of 7.
+                           <div id="TryAgainButton">
+                              <button id="tryagain" type="button" class="btn btn-default btn-lg">
+                                 Try again?
+                              </button>
+                           </div>
+                        </div>
+
+                        <div id="QustionNumContainer">
+                          <span id="StudentFeedBackText">Your answers: </span> <br/>
+                          <span id="QustionNum1" class="QustionNumbers">1</span>
+                          <span id="QustionNum2" class="QustionNumbers">2</span>
+                          <span id="QustionNum3" class="QustionNumbers">3</span>
+                          <span id="QustionNum4" class="QustionNumbers">4</span>
+                          <span id="QustionNum5" class="QustionNumbers">5</span>
+                          <span id="QustionNum6" class="QustionNumbers">6</span>
+                          <span id="QustionNum7" class="QustionNumbers">7</span>
+                        </div>
+
+                    </div>
+
+        <!--  </div>  --> <!-- END .col-sm-12 -->
+
+           </div>  <!-- END .row -->
+
+        </div>  <!-- END .container-fluid -->
+        
+
+
+    </body>
+</html>
